@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://wwww.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{fragments/main_layout}">
+<link rel="stylesheet" href="../static/css/minty/bootstrap.min.css" th:href="@{css/minty/bootstrap.min.css}" />
+<head>
+    <title>Index Page</title>
+</head>
+<body>
+
+    <div layout:fragment="content" class="container mySpace">
+        <div class="jumbotron">
+            <p>Some text here from spring boot with love</p>
+        </div>
+    </div>
+</body>
+</html>
