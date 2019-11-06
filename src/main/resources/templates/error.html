@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://wwww.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{fragments/main_layout}">
+<link rel="stylesheet" href="../static/css/minty/bootstrap.min.css" th:href="@{css/minty/bootstrap.min.css}" />
+<head>
+    <title>Error Page</title>
+</head>
+<body>
+
+    <div layout:fragment="content" class="container mySpace">
+        <div class="jumbotron">
+            <h1 class="display-3 text-center"><span th:text="${status}" class="text text-danger"></span></h1>
+            <p class="lead text-center"><span th:text="${message}"></span></p>
+            <hr class="my-4">
+            <p class="lead text-center">
+                <a class="btn btn-primary btn-lg" href="/" role="button">Go back</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
